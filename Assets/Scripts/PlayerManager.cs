@@ -21,6 +21,12 @@ public class PlayerManager : MonoBehaviour
         }
         animator.SetBool("Andando",Guerreiro.Andando);
         animator.speed = animSpeed;
+        
+
+        if (Input.GetKey(KeyCode.X))
+        {
+          // Animator.SetTrigger("Ataque");
+        }
     }
     
 }
