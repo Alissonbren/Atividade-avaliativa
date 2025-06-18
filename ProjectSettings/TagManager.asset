@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ataque
   - Inimigo
+  - AtaqueEspecial
   layers:
   - Default
   - TransparentFX

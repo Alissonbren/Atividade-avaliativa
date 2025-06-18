@@ -17,16 +17,11 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.F))
         {
-            //Animator SetTrigger
+            animator.SetTrigger("Ataque");
         }
         animator.SetBool("Andando",Guerreiro.Andando);
         animator.speed = animSpeed;
-        
 
-        if (Input.GetKey(KeyCode.X))
-        {
-          // Animator.SetTrigger("Ataque");
-        }
     }
     
 }

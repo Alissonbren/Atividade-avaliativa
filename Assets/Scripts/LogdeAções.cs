@@ -1,4 +1,4 @@
-using System;
+            using System;
 using UnityEngine;
 
 public class TesteDeDano : MonoBehaviour
@@ -9,9 +9,9 @@ public class TesteDeDano : MonoBehaviour
     {
         if (colisao.gameObject.CompareTag("Inimigo"))
         {
-            int energia_atual = personagem.HP() - colisao.gameObject.GetComponent<Inimigo>().DanoDoInimigo();
+            int Vida = personagem.HP() - colisao.gameObject.GetComponent<Inimigo>().DanoDoInimigo();
            
-            personagem.AtribuirHP(energia_atual);
+            personagem.AtribuirHP(Vida);
            
             Debug.Log("O personagem " +personagem.Nome()+" tem agora "+personagem.HP());
         }
